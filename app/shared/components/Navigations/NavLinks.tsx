@@ -15,7 +15,10 @@ const NavLinks = () => {
             <li className={`p-2 mb-2 sm:mb-0 sm:mr-2 ${isActive(`/tasks`) ? 'text-[#5865F2]' : ''}`}> {/*${auth.userId}*/}
                 <Link href="/tasks">my task</Link>
             </li>
-            <li className={`p-2 mb-2 sm:mb-0 sm:mr-2 ${isActive("/auth") ? 'text-[#5865F2]' : ''}`}>
+            <li className={
+                `p-2 mb-2 sm:mb-0 sm:mr-2 bg-white py-2 px-4 rounded-lg text-sm sm:text-md font-bold uppercase 
+                border border-black-100 ${isActive("/auth") ? 'text-[#5865F2]' : 'text-black'}`}
+            >
                 <Link href="/auth">sign in</Link>
             </li>
         </ul>
