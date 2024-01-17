@@ -10,7 +10,7 @@ const MainHeader: React.FC<MainHeaderProps> = (props) => {
       flex items-center justify-between">
         {props.children}
     </div>
-  ) 
+  )
 }
 
 export default MainHeader;
